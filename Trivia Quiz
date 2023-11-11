@@ -1,0 +1,32 @@
+import random
+
+def trivia_quiz_game():
+questions = {
+"What is the capital of France?": ["London", "Paris", "Berlin", "Rome"],
+"Which planet is known as the Red Planet?": ["Mars", "Jupiter", "Saturn", "Neptune"],
+"What is the largest mammal?": ["Elephant", "Blue whale", "Giraffe", "Hippopotamus"]
+# 
+}
+
+question_list = list(questions.keys())
+random.shuffle(question_list) # перемешиваем вопросы, чтобы они не повторялись
+score = 0
+
+print("Welcome to the Trivia Quiz Game!")
+for question in question_list:
+print(question)
+for i, answer in enumerate(questions[question], 1):
+print(f"{i}. {answer}")
+user_answer = input("Your answer (enter the number): ")
+if user_answer.isdigit() and 1 <= int(user_answer) <= len(questions[question]):
+if questions[question][int(user_answer) - 1] == "Mars":
+print("Correct!")
+score += 1
+else:
+print("Incorrect. The correct answer is 'Mars'.")
+else:
+print("Invalid input. Skipping this question.")
+
+print("Quiz finished! Your final score is:", score)
+
+trivia_quiz_game()
