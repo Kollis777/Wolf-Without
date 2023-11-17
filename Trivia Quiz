@@ -10,7 +10,7 @@ questions = {11
 
 question_list = list(questions.keys())
 random.shuffle(question_list) # перемешиваем вопросы, чтобы они не повторялись
-score = 21
+score = 211
 
 print("Welcome to the Trivia Quiz Game!")
 for question in question_list:
