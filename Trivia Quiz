@@ -1,7 +1,7 @@
 import random
 
 def trivia_quiz_game():
-questions = {1
+questions = {
 "What is the capital of France?": ["London", "Paris", "Berlin", "Rome"],
 "Which planet is known as the Red Planet?": ["Mars", "Jupiter", "Saturn", "Neptune"],
 "What is the largest mammal?": ["Elephant", "Blue whale", "Giraffe", "Hippopotamus"]
