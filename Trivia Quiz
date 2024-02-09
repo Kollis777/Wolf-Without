@@ -1,4 +1,4 @@
-import random # 
+import random # 1
 
 def trivia_quiz_game():
 questions = {
